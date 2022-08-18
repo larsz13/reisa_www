@@ -1,0 +1,16 @@
+/* ----------- FONT ------------ */
+
+@font-face {
+    font-family:'Favorit';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Favorit'), url('fonts/favorit-regular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family:'Favorit';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Favorit'), url('fonts/favorit-medium.otf') format('opentype');
+  }
+
