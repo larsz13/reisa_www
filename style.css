@@ -1,16 +1,34 @@
 /* ----------- FONT ------------ */
 
 @font-face {
-    font-family:'Favorit';
+    font-family:'PxGrotesk';
     font-style: normal;
     font-weight: 400;
-    src: local('Favorit'), url('fonts/favorit-regular.otf') format('opentype');
+    src: local('PxGrotesk'), url('fonts/Px-Grotesk-Regular.ttf') format('truetype');
   }
   
   @font-face {
-    font-family:'Favorit';
+    font-family:'PxGrotesk';
     font-style: normal;
-    font-weight: 500;
-    src: local('Favorit'), url('fonts/favorit-medium.otf') format('opentype');
+    font-weight: 300;
+    src: local('PxGrotesk'), url('fonts/Px-Grotesk-Light.ttf') format('truetype');
   }
 
+/* ----------- GLOBAL STYLES ----------- */
+
+body{
+    background-color:black;
+    color:white;
+    font-family:'PxGrotesk';
+}
+
+/* ----------- FONT STYLES ------------- */
+
+h1,h2{
+    font-size:40px;
+}
+
+p{
+    font-size:18px;
+    font-weight:300;
+}
