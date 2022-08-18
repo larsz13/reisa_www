@@ -20,15 +20,116 @@ body{
     background-color:black;
     color:white;
     font-family:'PxGrotesk';
+    margin:20px;
+}
+
+#nav{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    padding:80px 20px 20px 20px;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+
 }
 
 /* ----------- FONT STYLES ------------- */
 
+h1,h2,a{
+    font-size:36px;
+    letter-spacing: -1px;;
+}
+
 h1,h2{
-    font-size:40px;
+    margin-block-start: 0;
+    margin-block-end: 32px;
+}
+
+p{
+    margin-block-start: 0;
+    margin-block-end: 24px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    opacity:0.7;
+    transition: opacity 0.3s ease-in-out;
+    transition: letter-spacing 0.3s ease-in-out;
+}
+
+a:hover{
+    opacity:1;
+    cursor:pointer;
+    letter-spacing: 1px;
 }
 
 p{
     font-size:18px;
     font-weight:300;
+    line-height: 1.2;
+}
+
+/* ----------- TOGGLE OF PAGE ---------- */
+
+.hide{
+    display:none;
+}
+
+/* ------------ LAYOUT FLEX OF VISION -------------*/
+
+#text{
+    display: flex;
+    flex-direction: row;
+    gap:60px;
+}
+
+#left,#right{
+    max-width: 500px;
+}
+
+
+
+/* ------------ ANIMATIONS --------------- */
+
+.animate{
+    animation-duration: 2s;
+    animation-delay:0s;
+    animation-name: ani-one;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes ani-one {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+  }
+
+
+/* ----------- MOBILE LARGE ------------ */
+@media screen and (max-width: 710px) {
+    #text{
+        flex-direction: column;
+        gap:0;
+        margin-bottom:120px;
+        max-width:400px;
+    }
+}
+
+
+/* ----------- MOBILE ------------ */
+@media screen and (max-width: 510px) {
+    h1,h2,a {
+        font-size:24px;
+    }
+    p{
+        font-size:16px;
+    }
+}
+
+/* ----------- MOBILE SMALL ------------ */
+@media screen and (max-width: 370px) {
+    h1,h2,a {
+        font-size:20px;
+    }
 }
