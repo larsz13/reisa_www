@@ -35,12 +35,12 @@ body{
 
 /* ----------- FONT STYLES ------------- */
 
-h1,h2,a{
+h1,h2,h3,a{
     font-size:36px;
     letter-spacing: -1px;;
 }
 
-h1,h2{
+h1,h2,h3{
     margin-block-start: 0;
     margin-block-end: 32px;
 }
@@ -95,16 +95,15 @@ p{
 .animate{
     animation-duration: 2s;
     animation-delay:0s;
-    animation-name: ani-one;
-    animation-fill-mode: backwards;
+    animation-name: ani-in;
+    animation-fill-mode: forwards;
 }
 
 
-@keyframes ani-one {
-    0% { opacity: 0;}
-    100% { opacity: 1;}
+@keyframes ani-in {
+    0% { opacity: 0;margin-top:30px;}
+    100% { }
   }
-
 
 /* ----------- MOBILE LARGE ------------ */
 @media screen and (max-width: 710px) {
@@ -119,7 +118,7 @@ p{
 
 /* ----------- MOBILE ------------ */
 @media screen and (max-width: 510px) {
-    h1,h2,a {
+    h1,h2,h3,a {
         font-size:24px;
     }
     p{
@@ -129,7 +128,7 @@ p{
 
 /* ----------- MOBILE SMALL ------------ */
 @media screen and (max-width: 370px) {
-    h1,h2,a {
+    h1,h2,h3,a {
         font-size:20px;
     }
 }
